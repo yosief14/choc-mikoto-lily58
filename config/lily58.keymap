@@ -44,7 +44,7 @@
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                               &bt BT_CLR_ALL  &trans                &trans                 &trans     &trans     &trans
 &kp F1      &kp F2            &kp F3             &kp F4             &kp F5        &kp F6                                     &kp UNDER       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp ASTRK  &kp MINUS
 &kp GRAVE   &kp EXCL          &kp AT             &kp HASH           &kp PERCENT   &kp DOLLAR                                 &kp CARET       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL  &kp RPAR   &kp TILDE
-&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &kp LS(LC(RIGHT))  &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS   &kp PIPE   &kp BACKSLASH
+&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &kp LS(LC(RIGHT))  &tog 3          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPS   &kp PIPE   &kp BACKSLASH
                                                  &trans             &trans        &trans        &trans    &trans             &trans          &trans                &trans
             >;
 
