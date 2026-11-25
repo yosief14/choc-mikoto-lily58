@@ -18,10 +18,24 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+# Dongle setup: the MetaKeebs receiver is the central (and runs ZMK Studio),
+# both halves are peripherals that connect to it.
 include:
-  - board: mikoto@7.2
-    shield: lily58_left nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: lily58_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: lily58_dongle
+  - board: mikoto@7.2
+    shield: lily58_left nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: lily58_left_peripheral
   - board: mikoto@7.2
     shield: lily58_right nice_view_adapter nice_view
+    artifact-name: lily58_right
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: settings_reset_dongle
+  - board: mikoto@7.2
+    shield: settings_reset
+    artifact-name: settings_reset_halves
